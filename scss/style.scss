@@ -1,0 +1,283 @@
+@font-face{
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+
+.dark{
+  background: #383638;
+  .in{
+    background: #FFF;
+    color: #22343D !important;
+  }
+}
+.dark *{
+  color: #FFFFFF !important;
+  background: #383638;
+}
+
+body{
+  width: 100%;
+  font-family: Poppins, sans-serif;
+  background: #FFF;
+
+  header{
+    padding: 18px 160px;
+    .nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo{
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: #173A56;
+      font-family: Poppins;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px;
+    }
+    .nav-links{
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      a{
+        color: #22343D;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        transition: 0.3s;
+        &:hover{
+          font-weight: 600;
+        }
+      }
+      .nav-button{
+        padding: 10px 23px 9px 25px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      .in{
+        border: 1px solid #BCD0E5;
+        color: #173A56;
+      }
+      .up{
+        background: #02897A;
+        color: #FFF;
+      }
+    }
+  }
+  main{
+    .hero-section{
+      padding: 25px 160px;
+      .hero-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+          color: #22343D;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 60px;
+        }
+        p{
+          padding-top: 18px;
+          padding-bottom: 45px;
+          color: #22343D;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+        }
+        .hero-btns{
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          button{
+            padding: 15px 41px 14px;
+            flex-shrink: 0;
+            border-radius: 4px;
+            background: #02897A;
+            color: #FFF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+          a{
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            color: #02897A;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-decoration-line: underline;
+            svg{
+              fill: #02897A;
+            }
+          }
+        }
+      }
+    }
+    .ortayozuv{
+      padding-bottom: 57px;
+      padding-top: 90px;
+      color: #22343D;
+      text-align: center;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    .product{
+      width: 100%;
+      padding: 8px 160px 90px;
+      background-image: url(../images/pr-background.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      .product-cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h5{
+          color: #22343D;
+          padding-top: 30px;
+          padding-bottom: 13px;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+        p{
+          color: #22343D;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26px;
+        }
+      }
+      .product-button{
+        margin-top: 35px;
+        margin-left: 40%;
+        padding: 15px 32px 14px 34px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        background: #02897A;
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+    .management{
+      margin-top: 150px;
+      padding: 0 160px;
+      .man-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h4{
+          color: #22343D;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+        h3{
+          color: #22343D;
+          padding-top: 8px;
+          padding-bottom: 11px;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        p{
+          color: #22343D;
+          padding-top: 12px;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26px;
+        }
+        h5{
+          color: #22343D;
+          padding-top: 27px;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 26px;
+        }
+      }
+    }
+    .engine-section{
+      margin-top: 150px;
+      padding: 0 160px;
+      .engine-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h4{
+          color: #22343D;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+        h3{
+          padding-top: 8px;
+          padding-bottom: 23px;
+          color: #22343D;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        h5{
+          color: #22343D;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26px;
+        }
+        p{
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          padding-top: 30px;
+          color: #22343D;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
